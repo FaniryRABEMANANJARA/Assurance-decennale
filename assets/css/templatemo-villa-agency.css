@@ -740,7 +740,7 @@ Banner Style
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 20% 120px 20%;
+  padding: 100px 20% 100px 20%;
   margin-top: 0px;
 }
 
@@ -762,7 +762,7 @@ Banner Style
   font-size: 16px;
   font-weight: 100;
   text-transform: capitalize;
-  padding: 0px 15px;
+  padding: 6px 15px;
   display: inline-block;
   margin-bottom: 30px;
 }
