@@ -11,14 +11,46 @@
   <title>Assurance Décennale</title>
 
   <!-- Bootstrap core CSS -->
+<<<<<<< Updated upstream
   <link href="assets/images/icon.jpg" rel="icon" style="width: 40px; height: 40px;">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+=======
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('dNxC6eQXV6EbmATqa');
+    })();
+
+    function sendMail() {
+      var params = {
+        from_name: document.getElementById("from_name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        message: document.getElementById("message").value
+      }
+      // alert(params.from_name);
+      // console.log("dddd", params);
+      // return false;
+      emailjs.send("service_zo0onci", "template_ewnbepe", params)
+        .then(function (res) {
+          alert("Email bien envoyé!! " + res.status);
+          document.getElementById("contact-form").reset(); // Correction de l'ID du formulaire
+        })
+        .catch(function (error) {
+          console.log("Erreur lors de l'envoi de l'email:", error);
+        });
+    }
+  </script>
+>>>>>>> Stashed changes
   <!-- Additional CSS Files -->
   <link rel="stylesheet" href="assets/css/fontawesome.css">
   <link rel="stylesheet" href="assets/css/templatemo-villa-agency.css">
   <link rel="stylesheet" href="assets/css/owl.css">
   <link rel="stylesheet" href="assets/css/animate.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+<<<<<<< Updated upstream
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3912W74S8X"></script>
   <script>
@@ -27,6 +59,15 @@
     gtag('js', new Date());
 
     gtag('config', 'G-3912W74S8X');
+=======
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3KYP5REPJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-Z3KYP5REPJ');
+>>>>>>> Stashed changes
   </script>
 </head>
 
@@ -100,9 +141,27 @@
       <div class="item item-1">
         <div class="header-text">
           <span class="category">Simple. Solide. Moins cher</span>
+<<<<<<< Updated upstream
           <h2 style="font-size: 25px;">Protégez vos chantiers et vos clients</h2>
         </div>
       </div>
+=======
+          <h2>Protégez vos chantiers et vos clients</h2>
+        </div>
+      </div>
+      <!--div class="item item-2">
+        <div class="header-text">
+          <span class="category">Melbourne, <em>Australia</em></span>
+          <h2>Be Quick!<br>Get the best villa in town</h2>
+        </div>
+      </div>
+      <div class="item item-3">
+        <div class="header-text">
+          <span class="category">Miami, <em>South Florida</em></span>
+          <h2>Act Now!<br>Get the highest level penthouse</h2>
+        </div>
+      </div-->
+>>>>>>> Stashed changes
     </div>
   </div>
 
@@ -112,9 +171,14 @@
         <div class="col-lg-4">
           <div class="left-image">
             <img src="assets/images/couvreur.jpg" alt="" />
+<<<<<<< Updated upstream
             <!--  -->
               <img src="assets/images/featured-icon.png" alt="" style="max-width: 60px; padding: 0px;">
             <!-- </a> -->
+=======
+            <a href=""><img src="assets/images/featured-icon.png" alt=""
+                style="max-width: 60px; padding: 0px;"></a>
+>>>>>>> Stashed changes
           </div>
         </div>
         <div class="col-lg-5">
@@ -133,8 +197,12 @@
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample">
                 <div class="accordion-body">
+<<<<<<< Updated upstream
                   Nous couvrons votre Entreprise avec les assurances professionnelles adaptées aux métiers d’Audit, de
                   Conseil et d’Expertise</div>
+=======
+                  Nous couvrons votre Entreprise avec les assurances professionnelles adaptées aux métiers d’Audit, de Conseil et d’Expertise</div>
+>>>>>>> Stashed changes
               </div>
             </div>
             <div class="accordion-item">
@@ -174,6 +242,7 @@
         <div class="col-lg-3">
           <div class="info-table">
             <ul>
+<<<<<<< Updated upstream
               <li>
                 <img src="assets/images/info-icon-02.png" alt="" style="max-width: 45px;">
                 <h4>Contrat<br><p style="font-size: 10px;">Contrat déjà prête</p></h4>
@@ -185,6 +254,23 @@
               <li>
                 <img src="assets/images/info-icon-04.png" alt="" style="max-width: 45px;">
                 <h4>Sécurité<br><p style="font-size: 10px;">24/7 sous contrôle</p></h4>
+=======
+              <!-- <li>
+                <img src="assets/images/info-icon-01.png" alt="" style="max-width: 52px;">
+                <h4>250 m2<br><span>Total Flat Space</span></h4>
+              </li> -->
+              <li>
+                <img src="assets/images/info-icon-02.png" alt="" style="max-width: 52px;">
+                <h4>Contrat<br><span>Contrat déjà prête</span></h4>
+              </li>
+              <li>
+                <img src="assets/images/info-icon-03.png" alt="" style="max-width: 52px;">
+                <h4>Paiement<br><span>Procédure de paiement</span></h4>
+              </li>
+              <li>
+                <img src="assets/images/info-icon-04.png" alt="" style="max-width: 52px;">
+                <h4>Sécurité<br><span>24/7 sous contrôle</span></h4>
+>>>>>>> Stashed changes
               </li>
             </ul>
           </div>
@@ -193,12 +279,77 @@
     </div>
   </div>
 
+<<<<<<< Updated upstream
+=======
+  <!-- <div class="video section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 offset-lg-4">
+          <div class="section-heading text-center">
+            <h6>| Video View</h6>
+            <h2>Get Closer View & Different Feeling</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="video-content">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="video-frame">
+            <img src="assets/images/video-frame.jpg" alt="">
+            <a href="https://youtube.com" target="_blank"><i class="fa fa-play"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="fun-facts">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="wrapper">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="34" data-speed="1000"></h2>
+                  <p class="count-text ">Buildings<br>Finished Now</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="12" data-speed="1000"></h2>
+                  <p class="count-text ">Years<br>Experience</p>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="counter">
+                  <h2 class="timer count-title count-number" data-to="24" data-speed="1000"></h2>
+                  <p class="count-text ">Awwards<br>Won 2023</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+>>>>>>> Stashed changes
   <div class="section best-deal" id="offre">
     <div class="container">
       <div class="row">
         <div class="col-lg-4">
           <div class="section-heading">
+<<<<<<< Updated upstream
             <h6 style="font-size: 20px;">| OFFRES</h6>
+=======
+            <h6>| OFFRES</h6>
+            <h2>Optimisez le coût</h2>
+>>>>>>> Stashed changes
           </div>
         </div>
         <div class="col-lg-12">
@@ -239,6 +390,7 @@
                     </div>
                     <div class="col-lg-3">
                       <h4>Exemples de tarifs garantie décennale par mois</h4>
+<<<<<<< Updated upstream
                       <p>Matmut, Axa, SMABTP, Allianz et MMA sont les acteurs majeurs de l’assurance décennale en
                         France. Ils proposent des tarifs intéressants mais la meilleure solution pour que vous trouviez
                         l’assurance décennale qui vous convient est de comparer les offres. </p>
@@ -246,6 +398,11 @@
                         <!--  -->
                           <i class="fa fa-calendar"></i> Programmer une visite
                         <!-- </a> -->
+=======
+                      <p>Matmut, Axa, SMABTP, Allianz et MMA sont les acteurs majeurs de l’assurance décennale en France. Ils proposent des tarifs intéressants mais la meilleure solution pour que vous trouviez l’assurance décennale qui vous convient est de comparer les offres.     </p>
+                      <div class="icon-button">
+                        <a href=""><i class="fa fa-calendar"></i> Programmer une visite</a>
+>>>>>>> Stashed changes
                       </div>
                     </div>
                   </div>
@@ -267,6 +424,7 @@
                     </div>
                     <div class="col-lg-3">
                       <h4>Exemples de tarifs garantie décennale par mois</h4>
+<<<<<<< Updated upstream
                       <p>Matmut, Axa, SMABTP, Allianz et MMA sont les acteurs majeurs de l’assurance décennale en
                         France. Ils proposent des tarifs intéressants mais la meilleure solution pour que vous trouviez
                         l’assurance décennale qui vous convient est de comparer les offres. </p>
@@ -274,6 +432,11 @@
                         <!--  -->
                           <i class="fa fa-calendar"></i> Programmer une visite
                         <!-- </a> -->
+=======
+                      <p>Matmut, Axa, SMABTP, Allianz et MMA sont les acteurs majeurs de l’assurance décennale en France. Ils proposent des tarifs intéressants mais la meilleure solution pour que vous trouviez l’assurance décennale qui vous convient est de comparer les offres.      </p>
+                      <div class="icon-button">
+                        <a href=""><i class="fa fa-calendar"></i> Programmer une visite</a>
+>>>>>>> Stashed changes
                       </div>
                     </div>
                   </div>
@@ -295,6 +458,7 @@
                     </div>
                     <div class="col-lg-3">
                       <h4>Exemples de tarifs garantie décennale par mois</h4>
+<<<<<<< Updated upstream
                       <p>Matmut, Axa, SMABTP, Allianz et MMA sont les acteurs majeurs de l’assurance décennale en
                         France. Ils proposent des tarifs intéressants mais la meilleure solution pour que vous trouviez
                         l’assurance décennale qui vous convient est de comparer les offres. </p>
@@ -302,6 +466,11 @@
                         <!--  -->
                           <i class="fa fa-calendar"></i> Programmer une visite
                         </a>
+=======
+                      <p>Matmut, Axa, SMABTP, Allianz et MMA sont les acteurs majeurs de l’assurance décennale en France. Ils proposent des tarifs intéressants mais la meilleure solution pour que vous trouviez l’assurance décennale qui vous convient est de comparer les offres.    </p>
+                      <div class="icon-button">
+                        <a href=""><i class="fa fa-calendar"></i> Programmer une visite</a>
+>>>>>>> Stashed changes
                       </div>
                     </div>
                   </div>
@@ -327,6 +496,7 @@
       <div class="row">
         <div class="col-lg-4 col-md-6">
           <div class="item">
+<<<<<<< Updated upstream
             <!--a href=""--><img src="assets/images/property-03.jpg" alt=""><!--/a-->
             <h4>ELECTRICIEN</a></h4>
             <p>
@@ -334,10 +504,23 @@
               entraînant des dégâts des eaux chez les voisins de ce client. Nous intervenons pour résoudre le litige
               professionnel en utilisant la couverture de la Garantie Décennale.
             </p>
+=======
+            <a href=""><img src="assets/images/property-03.jpg" alt=""></a>
+            <!-- <span class="category">Luxury Villa</span>
+            <h6>$2.264.000</h6> -->
+            <h4><a href="">ELECTRICIEN</a></h4>
+            <p>
+              Au cours d'un projet chez un client, une cloison dissimulant une canalisation d'immeuble est endommagée, entraînant des dégâts des eaux chez les voisins de ce client. Nous intervenons pour résoudre le litige professionnel en utilisant la couverture de la Garantie Décennale.
+            </p>
+            <!-- <div class="main-button">
+              <a href="">Programmer une visite</a>
+            </div> -->
+>>>>>>> Stashed changes
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="item">
+<<<<<<< Updated upstream
             <img src="assets/images/property-01.jpg" alt=""></a>
             <h4>PLOMBIER</a></h4>
             <p>
@@ -345,10 +528,22 @@
               devait être résolu. Cependant, après un certain laps de temps, le client réalise que la situation
               persiste, entraînant un dégât des eaux. Nous interviendrons pour traiter le sinistre en utilisant la
               couverture de votre Garantie Décennale. </p>
+=======
+            <a href=""><img src="assets/images/property-01.jpg" alt=""></a>
+            <!-- <span class="category">Luxury Villa</span>
+            <h6>$1.180.000</h6> -->
+            <h4><a href="">PLOMBIER</a></h4>
+            <p>
+              Après avoir été sollicité pour intervenir à la suite d'une fuite chez un client, le problème de plomberie devait être résolu. Cependant, après un certain laps de temps, le client réalise que la situation persiste, entraînant un dégât des eaux. Nous interviendrons pour traiter le sinistre en utilisant la couverture de votre Garantie Décennale. </p>
+            <!-- <div class="main-button">
+              <a href="">Programmer une visite</a>
+            </div> -->
+>>>>>>> Stashed changes
           </div>
         </div>
         <div class="col-lg-4 col-md-6">
           <div class="item">
+<<<<<<< Updated upstream
             <img src="assets/images/property-02.jpg" alt=""></a>
             <h4>MACON</a></h4>
             <p>
@@ -358,6 +553,73 @@
               couverture de votre Garantie Décennale.</p>
           </div>
         </div>
+=======
+            <a href=""><img src="assets/images/property-02.jpg" alt=""></a>
+            <!-- <span class="category">Luxury Villa</span>
+            <h6>$1.460.000</h6> -->
+            <h4><a href="">MACON</a></h4>
+            <p>
+              Suite à votre intervention dans la restauration de l'appartement de votre client, le mur présente un risque d'effondrement après la réception, en raison d'une erreur commise lors de vos travaux. Face à la volonté du client de vous tenir responsable pour malfaçon, nous assumerons les dommages grâce à la couverture de votre Garantie Décennale.</p>
+            <!-- <div class="main-button">
+              <a href="">Programmer une visite</a>
+            </div> -->
+          </div>
+        </div>
+        <!-- <div class="col-lg-4 col-md-6">
+          <div class="item">
+            <a href=""><img src="assets/images/property-04.jpg" alt=""></a>
+            <span class="category">Apartment</span>
+            <h6>$584.500</h6>
+            <h4><a href="">12 New Street Miami, OR 12650</a></h4>
+            <ul>
+              <li>Bedrooms: <span>4</span></li>
+              <li>Bathrooms: <span>3</span></li>
+              <li>Area: <span>125m2</span></li>
+              <li>Floor: <span>25th</span></li>
+              <li>Parking: <span>2 cars</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="">Programmer une visite</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="col-lg-4 col-md-6">
+          <div class="item">
+            <a href=""><img src="assets/images/property-05.jpg" alt=""></a>
+            <span class="category">Penthouse</span>
+            <h6>$925.600</h6>
+            <h4><a href="">34 Beach Street Miami, OR 42680</a></h4>
+            <ul>
+              <li>Bedrooms: <span>4</span></li>
+              <li>Bathrooms: <span>4</span></li>
+              <li>Area: <span>180m2</span></li>
+              <li>Floor: <span>38th</span></li>
+              <li>Parking: <span>2 cars</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="">Programmer une visite</a>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div class="col-lg-4 col-md-6">
+          <div class="item">
+            <a href=""><img src="assets/images/property-06.jpg" alt=""></a>
+            <span class="category">Modern Condo</span>
+            <h6>$450.000</h6>
+            <h4><a href="">22 New Street Portland, OR 16540</a></h4>
+            <ul>
+              <li>Bedrooms: <span>3</span></li>
+              <li>Bathrooms: <span>2</span></li>
+              <li>Area: <span>165m2</span></li>
+              <li>Floor: <span>26th</span></li>
+              <li>Parking: <span>3 cars</span></li>
+            </ul>
+            <div class="main-button">
+              <a href="">Programmer une visite</a>
+            </div>
+          </div>
+        </div> -->
+>>>>>>> Stashed changes
       </div>
     </div>
   </div>
@@ -390,13 +652,21 @@
             <div class="col-lg-6">
               <div class="item phone">
                 <img src="assets/images/phone-icon.png" alt="" style="max-width: 52px;">
+<<<<<<< Updated upstream
                 <h6>010-020-0340<br><p style="font-size: 10px;">Téléphone</p></h6>
+=======
+                <h6>010-020-0340<br><span>Téléphone</span></h6>
+>>>>>>> Stashed changes
               </div>
             </div>
             <div class="col-lg-6">
               <div class="item email">
                 <img src="assets/images/email-icon.png" alt="" style="max-width: 52px;">
+<<<<<<< Updated upstream
                 <h6>info@com.co<br><p style="font-size: 10px;">Adresse Email</p></h6>
+=======
+                <h6>info@com.co<br><span>Adresse Email</span></h6>
+>>>>>>> Stashed changes
               </div>
             </div>
           </div>
@@ -450,6 +720,7 @@
   </footer>
 
   <!-- Scripts -->
+<<<<<<< Updated upstream
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript">
     (function () {
@@ -474,6 +745,8 @@
     }
   </script>
 
+=======
+>>>>>>> Stashed changes
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -481,7 +754,11 @@
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
+<<<<<<< Updated upstream
 
+=======
+  
+>>>>>>> Stashed changes
 
 </body>
 
